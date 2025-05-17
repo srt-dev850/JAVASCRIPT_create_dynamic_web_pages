@@ -1,0 +1,17 @@
+<script>
+    (function(){
+        let day = 32
+        try
+        {
+            if( day > 31 )
+            {
+                throw new RangeError( 'Day Cannot Exceed 31' )
+            }
+
+            if( day < 1 )
+            {
+                throw 'invalid'
+            }
+        }
+    })()
+</script>
