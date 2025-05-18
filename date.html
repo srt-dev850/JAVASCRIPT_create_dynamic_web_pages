@@ -6,7 +6,7 @@
         if( ( now.getMonth() < 3)&&( now.getDate() < 10)){ dst = 0
         }
         if( ( now.getMonth() > 9 ) && ( now.getDate() < 2 ) ){ dst = 0}
-        switch
+        switch(offset)
         {
             case (300 - dst ) : offset = 'EastCost' ; break
             case (360 - dst) : offset = 'Central' ; break
