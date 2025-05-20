@@ -1,17 +1,17 @@
 <script>
     (function(){
-        let jsString = 'Text'
-        let jsNumber = 125000
-        let jsBoolean = true
-        let jsObject = {firstName:'Mike' , lastNmae:'McGrath'}
-        let jsDate = new Date()
-        let jsArray = [ 1, 2, 3 ]
-        let jsRegExp = /ineasysteps/i
-        let jsMath = Math
-        let jsError = new Error('Error!')
-        console.log(' Date Object: ' + jsDate )
-        console.log('Locale Date String: ' + jsDate.toLocaleString())
-        console.log('\nPrimitive Number: ' + jsNumber )
-        console.log('Locale Number String: ' + jsNumber.toLocaleString())
+        let proprty, car = {
+            make: 'Jeep',
+            model: 'Wrangler',
+            accelerate: function(){
+                return this.model + ' drives away'
+            },
+            brake: function(){
+                return this.make + ' pulls up'
+            }
+        }
+        for( property in car ){
+            console.log( property + ': ' + car[ property ])
+        }
     })()
 </script>
