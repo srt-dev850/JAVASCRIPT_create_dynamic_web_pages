@@ -1,0 +1,7 @@
+<p id="response" style="font=1.5em sans-serif"></p>
+<script>
+const info = document.getElementById( 'response' )
+windows.alert( 'Hello from JavaScript' )
+info.innerHTML = 'Confirm: ' + window.confirm( 'Go or Stop?' )
+info.innerHTML += '<br\>Prompt: ' + window.prompt( 'Yes or No?', 'Yes' )
+</script>
