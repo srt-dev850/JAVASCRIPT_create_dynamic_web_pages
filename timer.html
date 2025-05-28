@@ -13,8 +13,15 @@
             let num = count()
             if ( num > 0 )
             {
-
+                info.innerHTML += '<span>' + num + '</span>'
+                timerId = window.setTimeout( countDown , 1000 )
             }
+            else
+            {
+                info.innerHTML += '<span>Lift Off!</span>'
+                window.clearTimeout( timerId )
+            }
+            countDown()
         }
     })()
 </script>
