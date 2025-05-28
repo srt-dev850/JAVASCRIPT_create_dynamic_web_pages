@@ -1,0 +1,14 @@
+<p id = "info">
+    <a id = "frag">Fragment Anchor</a>
+</p>
+<script>
+    if( jump )
+    {
+        location = location.href + '#frag'
+    }
+    info.innerHTML += '<hr/>Href: ' + location.href
+    info.innerHTML += '<br/>Protocol: ' + location.protocol
+    info.innerHTML += '<br/>Host: ' + location.host
+    info.innerHTML += '<br/>Path: ' + location.pathname
+    info.innerHTML += '<br/>Hash: ' + location.hash
+</script>
