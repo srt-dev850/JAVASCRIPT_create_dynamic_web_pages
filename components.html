@@ -5,3 +5,19 @@
     <a href="formhelp.html" style="margin:5px">Help?</a>
 </form>
 <ul id="list"></ul>
+< style >
+*{font : 1em sans-serif ;}
+form { width : 500px ; height : 100px ; background : url(bg.png) ; }
+</style>
+<script>
+    (function(){
+        const list = document.getElementById( 'list' )
+        list.innerHTML = '<li>No. Forms: ' + document.forms.length
+        list.innerHTML += '<li>No. Links: ' + document.links.length
+        list.innerHTML += '<li>No. Images: ' + document.images.length
+        list.innerHTML += '<li>No. Style Sheets: ' + document.styleSheets.length
+        list.innerHTML += '<li>No. Scripts: ' + document.scripts.length
+        list.innerHTML += '<li>First Image URL: ' + document.images[ 0 ].src
+        list.innerHTML += '<li>First Form Element Value: ' + document.forms[ 0 ].elements[ 0 ].value
+    })()
+</script>
